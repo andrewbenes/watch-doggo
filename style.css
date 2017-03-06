@@ -1,18 +1,86 @@
 /*CSS reset*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,12 +89,15 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+
 /*Disable horizontal scroll on Macbook*/
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 
 /*Sick utility classes*/
 
@@ -43,7 +114,11 @@ html, body {
 }
 
 .spacer-20 {
-  margin: 10px 0;
+  margin: 20px 0;
+}
+
+.spacer-40 {
+  margin: 40px 0;
 }
 
 /*General styles*/
@@ -67,10 +142,11 @@ li {
   list-style-type: none;
 }
 
+
 /*Nav styles*/
 
 nav {
-  background-color: #222;
+  background-color: #333;
   height: 30px;
   display: flex;
   justify-content: space-around;
@@ -81,6 +157,7 @@ nav i {
   padding-top: 2px;
   color: #fff;
 }
+
 
 /*Header styles*/
 
@@ -95,35 +172,47 @@ header {
 }
 
 .hero-title {
-  font-size: 45px;
-  font-variant-caps: all-petite-caps;
-}
-  
-.hero-subtitle {
-  font-size: 16px;
+  font-size: 72px;
   font-variant-caps: all-petite-caps;
 }
 
-.header-cta a {
-  font-size: 14px;
-  color: cornflowerblue;
+.hero-subtitle {
+  font-size: 20px;
+  font-variant-caps: all-petite-caps;
 }
 
 @media screen and (min-width: 600px) {
-    header {
-      height: 800px;
-      background-image: url("assets/images/corgi-wide.jpg");
-      background-size: auto;
-    }
-    
+  header {
+    height: 800px;
+    background-image: url("assets/images/corgi-wide.jpg");
+    background-size: auto;
+  }
 }
 
-.header-cta a {
+@media screen and (min-width: 1200px) {
+  header {
+    height: 800px;
+    background-image: url("assets/images/corgi-wider.jpg");
+    background-size: auto;
+  }
+}
+
+/*Copy styles*/
+
+.hero-copy {
+  text-align: center;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.cta-text a {
   font-size: 14px;
   color: cornflowerblue;
 }
+
+.body-copy {
+  font-size: 14px;
 }
-
-
-
-
