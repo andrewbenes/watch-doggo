@@ -71,7 +71,7 @@ nav i {
 
 header {
   padding: 45px 0 120px 0;
-  height: 600px;
+  height: 550px;
   text-align: center;
   max-width: 100%;
   background-image: url("assets/images/corgi-tall.jpg");
@@ -123,4 +123,12 @@ h2 {
 
 .body-copy {
   font-size: 14px;
+}
+
+.reserve {
+  text-align: center;
+}
+
+.reserve input {
+  margin: 10px;
 }
