@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /*Sick utility classes*/
 
 .spacer-above-20 {
@@ -29,27 +28,52 @@ body {
   margin: 40px 0;
 }
 
+.padding-above-20 {
+  padding-top: 20px;
+}
+
+.padding-above-40 {
+  padding-top: 40px;
+}
+
+.padding-10 {
+  padding: 10px 0;
+}
+
+.padding-20 {
+  padding: 20px 0;
+}
+
+.padding-40 {
+  padding: 40px 0;
+}
+
+
 /*General styles*/
 
 body {
   font-size: 16px;
-  font-family: 'helvetica';
-  color: #313131;
+  font-family: "MyriadPro-Regular";
+  color: #333;
 }
 
 a {
   text-decoration: none;
-  color: #313131;
+  color: #0070c9;
 }
 
 a:hover {
-  color: #212121;
+  text-decoration: underline;
+
 }
 
 li {
   list-style-type: none;
 }
 
+.fancy-gray {
+  background-color: #fafafa
+}
 
 /*Nav styles*/
 
@@ -70,13 +94,17 @@ nav i {
 /*Header styles*/
 
 header {
-  padding: 45px 0 120px 0;
-  height: 550px;
+  height: 600px;
   text-align: center;
   max-width: 100%;
   background-image: url("assets/images/corgi-tall.jpg");
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+header h1 {
+  padding: 40px;
 }
 
 .hero-title {
@@ -91,17 +119,23 @@ header {
 
 @media screen and (min-width: 600px) {
   header {
-    height: 550px;
     background-image: url("assets/images/corgi-wide.jpg");
-    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) {
   header {
     background-image: url("assets/images/corgi-wider.jpg");
-    background-size: cover;
+    max-width: 1400px;
   }
+}
+
+.scroll-arrow {
+  color: #333;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*Copy styles*/
@@ -111,6 +145,17 @@ header {
   padding: 40px;
 }
 
+.body-copy {
+  text-align: center;
+  padding: 40px;
+}
+
+.body-copy img {
+  max-height: 320px;
+  padding: 0;
+}
+
+
 h2 {
   text-align: center;
   font-size: 36px;
@@ -118,7 +163,16 @@ h2 {
 
 .cta-text a {
   font-size: 14px;
-  color: cornflowerblue;
+  color: #0070c9;
+  transition: all 0.5s ease;
+}
+
+.cta-text a:hover {
+  font-size: 14.5px;
+}
+
+.cta-text i {
+  color: #0070c9;
 }
 
 .body-copy {
