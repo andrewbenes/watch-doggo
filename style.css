@@ -6,7 +6,29 @@ body {
   overflow-x: hidden;
 }
 
+
 /*Sick utility classes*/
+
+.flex-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-2x1 {
+  display: flex;
+  align-content: center;
+}
+
+@media screen and (max-width: 599px) {
+  .flex-2x1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-flip {
+    flex-direction: column-reverse;
+  }
+}
 
 .spacer-above-20 {
   margin-top: 20px;
@@ -14,6 +36,10 @@ body {
 
 .spacer-above-40 {
   margin-top: 40px;
+}
+
+.spacer-above-80 {
+  margin-top: 80px;
 }
 
 .spacer-10 {
@@ -48,11 +74,18 @@ body {
   padding: 40px 0;
 }
 
+.display-inline {
+  display: inline;
+}
+
+.display-block {
+  display: block;
+}
+
 
 /*General styles*/
 
 body {
-  font-size: 16px;
   font-family: "helvetica_ce_55_romanregular";
   color: #333;
 }
@@ -62,39 +95,132 @@ a {
   color: #0070c9;
 }
 
-a:hover {
-  text-decoration: underline;
-
-}
-
 li {
   list-style-type: none;
 }
 
 .fancy-gray {
-  background-color: #fafafa
+  background-color: #fafafa;
 }
 
-/*Nav styles*/
+.fancy-gray-border-top {
+  background-color: #fafafa;
+  border-top: 1px solid #efefef;
+}
+
+
+/*Copy styles*/
+
+.hero-copy {
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 14px;
+  line-height: 1.3;
+  max-width: 500px;
+}
+
+.body-copy {
+  text-align: center;
+  padding: 60px;
+  size: 8px;
+  line-height: 1.5;
+}
+
+.body-copy-square {
+  max-width: 250px;
+  font-size: 13px;
+}
+
+.reserve-copy {
+  text-align: center;
+  size: 8px;
+  line-height: 1.5;
+}
+
+.footer-copy {
+  font-size: 10px;
+  line-height: 2.0
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.cta-text a {
+  font-size: 14px;
+  color: #0070c9;
+}
+
+.cta-text a:hover {
+  text-decoration: underline;
+}
+
+.cta-text i {
+  color: #0070c9;
+}
+
+
+/*Nav and button styles*/
 
 nav {
   background-color: #333;
-  height: 30px;
+  height: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 nav i {
-  padding-top: 2px;
   color: #fff;
+}
+
+.below-nav-cta {
+  height: 40px;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.below-nav-cta h1 {
+  size: 8px;
+  padding: 11px;
+  padding-left: 10px;
+}
+
+.below-nav-cta h1 span {
+  font-size: 0.75em;
+}
+
+button {
+  height: 20px;
+  margin: 10px;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-radius: 3px;
+  border: 1px solid #07c;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  opacity: 0.67;
+}
+
+button a {
+  color: #fff;
+}
+
+
+/*I am aware that the following style isn't great for accessibility, but it removes the annoying blue halo on click from Chrome on Mac OS.*/
+
+button:focus {
+  outline: none;
 }
 
 
 /*Header styles*/
 
 header {
-  height: 600px;
+  height: 620px;
   text-align: center;
   max-width: 100%;
   background-image: url("assets/images/corgi-tall.jpg");
@@ -103,7 +229,7 @@ header {
   background-repeat: no-repeat;
 }
 
-header h1 {
+header h2 {
   padding: 40px;
 }
 
@@ -113,7 +239,7 @@ header h1 {
 }
 
 .hero-subtitle {
-  font-size: 20px;
+  font-size: 26px;
   font-variant-caps: all-petite-caps;
 }
 
@@ -123,66 +249,118 @@ header h1 {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  header {
-    background-image: url("assets/images/corgi-wider.jpg");
-    max-width: 1400px;
-  }
-}
-
 .scroll-arrow {
   color: #333;
-  height: 70px;
+  height: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/*Copy styles*/
-
-.hero-copy {
-  text-align: center;
-  padding: 40px;
-}
-
-.body-copy {
-  text-align: center;
-  padding: 40px;
-}
-
-.body-copy img {
-  max-height: 320px;
-  padding: 0;
+.scroll-arrow a {
+  color: #333;
 }
 
 
-h2 {
-  text-align: center;
-  font-size: 36px;
+/*The style below limits the size of all images below the hero (in sections) to 360px to support a simple square photo gallery.*/
+
+section img {
+  height: 360px;
+  height: 360px;
 }
 
-.cta-text a {
-  font-size: 14px;
-  color: #0070c9;
-  transition: all 0.5s ease;
-}
 
-.cta-text a:hover {
-  font-size: 14.5px;
-}
+/*Form styles*/
 
-.cta-text i {
-  color: #0070c9;
-}
-
-.body-copy {
-  font-size: 14px;
+.more-info {
+  display: none;
 }
 
 .reserve {
   text-align: center;
+  height: 350px;
 }
 
 .reserve input {
   margin: 10px;
+}
+
+
+/*Footer styles*/
+
+footer {
+  height: 210px;
+  display: flex;
+  text-align: center;
+  padding: 40px 10px;
+  min-width: 100%
+}
+
+.contact {
+  margin: 15px auto;
+}
+
+footer i {
+  color: #555;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a span:hover,
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-buttons i {
+  min-width: 20px;
+}
+
+.footer-link span {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 599px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-buttons {
+    margin-top: 40px;
+  }
+  .footer-buttons li {
+    display: inline;
+  }
+  .footer-link span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-copy {
+    flex: 3.5 0 0;
+    text-align: left;
+    margin-left: 20px;
+    padding: 0 20px;
+  }
+  .footer-buttons {
+    flex: 1 0 0;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 20px;
+  }
+  .footer-buttons .footer-copy {
+    margin-left: 0;
+  }
+  .footer-buttons li {
+    padding-top: 3px;
+  }
+  .push-2px {
+    padding-left: 2px;
+  }
 }
