@@ -3,6 +3,8 @@
 
 <head>
   <title>Apple Watch Doggo Edition</title>
+  <script src="jquery-3.1.1.js"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="css-reset.css">
   <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/fonts/stylesheet.css">
@@ -14,73 +16,119 @@
 <body>
   <nav role="navigation">
     <div><i class="fa fa-apple"></i></div>
-    <!-- nav will be added on wider breakpoint
-      <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-      </ul>
--->
   </nav>
+  <div class="below-nav-cta">
+    <h1>Apple Watch <span>Doggo Edition</span></h1>
+    <button><a href="#reserve">Reserve now</a></button>
+  </div>
   <header>
-    <h1><i class="fa fa-apple fa-3x"></i><span class="hero-title"> Watch</span><br><span class="hero-subtitle">Doggo Edition</span></h1>
-    <div class="cta-text spacer-10"><a href="#">Learn more</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#reserve">Buy now</a>&nbsp;<i class="fa fa-angle-right"></i></div>
+    <h2><i class="fa fa-apple fa-2x"></i><span class="hero-title"> Watch</span><br><span class="hero-subtitle">Doggo Edition</span></h2>
+    <div class="cta-text spacer-10"><a href="">Learn more</a>&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;<a href="#reserve">Reseve now</a>&nbsp;<i class="fa fa-angle-right"></i></div>
   </header>
-  
-  <div class="scroll-arrow spacer-10"><i class="fa fa-angle-down fa-4x"></i></div>
-  
-  <section class="hero-copy">
-    <h2>Now for doggo too</h2>
-    <p class="body-copy spacer-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <div class="cta-text"><a href="#">Compare all Apple Watch Doggo models</a>
+
+  <div class="scroll-arrow"><a href="#hero-header"><i class="fa fa-angle-down fa-4x"></i></a></div>
+
+  <h2 id="hero-header" class="spacer-above-40">Now for doggo too</h2>
+  <div class="flex-center">
+    <div class="hero-copy">
+      <p class="spacer-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="cta-text"><a href="">Compare all Apple Watch Doggo models</a>&nbsp;<i class="fa fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+
+  <section class="spacer-above-80 fancy-gray">
+    <div class="padding-40">
+      <h2 class="spacer-20">Made for doggo</h2>
+      <div class="flex-center">
+        <div class="flex-2x1">
+          <img src="assets/images/watch-apps.png">
+          <div class="body-copy body-copy-square">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  
-  <section class="body-copy">
-  <div class="description-block">
-        <img src="assets/images/watch-front-center.png">
-    
-        <h2>Made for doggo</h2>
-        <p class="body-copy">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+
+  <section>
+    <div class="padding-40">
+      <h2 class="spacer-20">Apps just for doggo</h2>
+      <div class="flex-center">
+        <div class="flex-2x1 flex-flip">
+          <div class="body-copy body-copy-square">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <img src="assets/images/watch-apps-2.png">
+        </div>
+      </div>
     </div>
-
-
-    
-
-  
   </section>
-  
-<section id="reserve" class="reserve spacer-above-40 fancy-gray padding-40">
-  <h2>Reserve yours today</h2>
-  <p class="price spacer-20">Starting from: <span>$349</span></p>
-  <form class="spacer-40">
-    <label>Material:</label>    
-    <select>
-<option>Aluminum</option>
-      <option>Stainless steel</option>
-      <option>Silver</option>
-      <option>Gold</option>
-      <option>Platinum</option>
-    </select>
-    <br>
-    <label>Size: </label>
-    <input type="radio" name="size" value="38mm" checked> 38mm</input>
-  <input type="radio" name="size" value="42mm"> 42mm</input>
-<br>
-<label>Email address: </label>
-<input type="text"></input>
-<br>
-<input type="submit"></input>
-</form>
-</section>
 
-<section class="spacer-40">
-  footer
-</section>
+  <section class="fancy-gray">
+    <div class="padding-40">
+      <h2 class="spacer-20">Keep up with doggo</h2>
+      <div class="flex-center">
+        <div class="flex-2x1">
+          <img src="assets/images/watch-map.png">
+          <div class="body-copy body-copy-square">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve" class="reserve spacer-above-40 padding-40">
+    <h2>Reserve yours today</h2>
+    <div class="price spacer-20">Starting from: <span>$349</span></p>
+      <form class="spacer-40">
+        <label>Material:</label>
+        <select>
+          <option>Aluminum</option>
+          <option>Stainless steel</option>
+          <option>Silver</option>
+          <option>Gold</option>
+          <option>Platinum</option>
+        </select>
+        <br>
+        <label>Size: </label>
+        <input type="radio" name="size" value="38mm" checked> 38mm</input>
+        <input type="radio" name="size" value="42mm"> 42mm</input>
+        <br>
+        <div class="more-info spacer-40">
+          <p class="reserve-copy spacer-10">
+            Please provide your email address for further reservation instruction:
+          </p>
+          <label>Email address: </label>
+          <input type="text"></input>
+          <br>
+          <input type="submit"></input>
+        </div>
+      </form>
+  </section>
+  <footer class="fancy-gray-border-top">
+    <div class="footer-copy">
+      <p>&copy; 2017 Not actually a real Apple product
+        <br> Powered by HTML, CSS and the odd bit of jQuery.</p>
+      <div class="contact">
+        <a href="https://www.redacademy.com/" target="_blank">RED Academy Capstone Project</a>
+      </div>
+      <p>Andrew Benes
+        <br>Vancouver, BC, Canada</p>
+    </div>
+    <div class="footer-buttons">
+      <p class="footer-copy">More products:</p>
+      <ul class="spacer-10">
+        <li><a class="footer-link" href=""><i class="fa fa-phone push-2px"></i>&nbsp;<span>iPhone</span></a></li>
+        <li><a class="footer-link" href=""><i class="fa fa-laptop"></i>&nbsp;<span>Macbook</span></a></li>
+        <li><a class="footer-link" href=""><i class="fa fa-desktop"></i>&nbsp;<span>Mac</span></a></li>
+        <li><a class="footer-link" href=""><i class="fa fa-clock-o push-2px"></i>&nbsp;<span>Watch</span></a></li>
+        <li><a class="footer-link" href=""><i class="fa fa-apple push-2px"></i>&nbsp;<span>Apple home</span></a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
+
 </html>
