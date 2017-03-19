@@ -1,3 +1,5 @@
+//Smooth scrolling all the way
+
 $(document).ready(function () {
 
   $("a").on('click', function (event) {
