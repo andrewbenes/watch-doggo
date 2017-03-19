@@ -330,7 +330,7 @@ footer a span:hover,
   font-size: 10px;
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 599px) {
   footer {
     flex-direction: column;
     align-items: center;
@@ -340,7 +340,7 @@ footer a span:hover,
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 600px) {
   footer {
     flex-direction: row;
     justify-content: space-between;
