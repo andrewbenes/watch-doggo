@@ -10,23 +10,39 @@ body {
 /*Sick utility classes*/
 
 .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-2x1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 @media screen and (max-width: 719px) {
   .flex-2x1 {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .flex-flip {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -166,9 +182,14 @@ h2 {
 nav {
   background-color: #333;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav i {
@@ -179,8 +200,12 @@ nav i {
 .below-nav-cta {
   height: 40px;
   border-bottom: 1px solid #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .below-nav-cta h1 {
@@ -196,9 +221,11 @@ nav i {
 button {
   height: 20px;
   margin: 10px;
+  background: -webkit-linear-gradient(#42a1ec, #0070c9);
   background: linear-gradient(#42a1ec, #0070c9);
   border-radius: 3px;
   border: 1px solid #07c;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -253,9 +280,14 @@ header h2 {
 .scroll-arrow {
   color: #333;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .scroll-arrow a {
@@ -299,6 +331,8 @@ section img {
 
 footer {
   height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   padding: 40px 0px;
@@ -328,8 +362,13 @@ footer a span:hover,
 
 @media screen and (max-width: 599px) {
   footer {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer-buttons {
     display: none;
@@ -338,19 +377,31 @@ footer a span:hover,
 
 @media screen and (min-width: 600px) {
   footer {
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .footer-copy {
-    flex: 4 0 0;
+    -webkit-box-flex: 4;
+        -ms-flex: 4 0 0px;
+            flex: 4 0 0;
     text-align: left;
   }
   .spacer-left {
     padding-left: 30px;
   }
   .footer-buttons {
-    flex: 1 0 0;
-    flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
     margin-right: 20px;
   }
