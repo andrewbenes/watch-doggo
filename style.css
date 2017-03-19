@@ -30,10 +30,6 @@ body {
   }
 }
 
-.padding-left-30 {
-  padding: 0 0 0 30px;
-}
-
 .spacer-above-20 {
   margin-top: 20px;
 }
@@ -346,8 +342,11 @@ footer a span:hover,
     justify-content: space-between;
   }
   .footer-copy {
-    flex: 5 0 0;
+    flex: 4 0 0;
     text-align: left;
+  }
+  .spacer-left {
+    padding-left: 30px;
   }
   .footer-buttons {
     flex: 1 0 0;
