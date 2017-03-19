@@ -173,6 +173,7 @@ nav {
 
 nav i {
   color: #fff;
+  padding: 10px;
 }
 
 .below-nav-cta {
@@ -285,6 +286,13 @@ section img {
   margin: 10px;
 }
 
+.price {
+  font-size: 13px;
+}
+
+.price span {
+  font-size: 18px;
+}
 
 /*Footer styles*/
 
