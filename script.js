@@ -18,18 +18,36 @@ $(document).ready(function () {
       });
     }
   });
-  
+
+  //Price updater 
+
   var basePrice = 349;
 
-$(".vars").change(function() {
+  $(".pricing").change(function () {
     newPrice = basePrice;
 
-    $('.vars option:selected').each(function() {
-        newPrice += $(this).data('price')
+    $('.pricing option:selected').each(function () {
+      newPrice += $(this).data('price')
     });
-    
+
     $('#item-price').html(newPrice);
 
-});
-
   });
+
+  //Show email address input
+
+  $('#38mm').click(function () {
+    if ($(this).is(':checked')) {
+      $('label[for="email-address"]').show('slow');
+      $('#email-address').fadeIn('slow');
+    }
+  });
+
+  $('#42mm').click(function () {
+    if ($(this).is(':checked')) {
+      $('label[for="email-address"]').show('slow');
+      $('#email-address').fadeIn('slow');
+    }
+  });
+
+});

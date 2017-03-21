@@ -81,26 +81,34 @@
 
   <section id="reserve" class="reserve spacer-above-40 padding-40">
     <h2>Reserve yours today</h2>
-    <div class="spacer-20">Starting from: $<span id="item-price">349</span></p>
-      <form class="spacer-20">
-        <label>Material:</label>
-        <select class="vars">
-          <option data-price="0">Aluminum</option>
-          <option data-price="100">Stainless steel</option>
-          <option data-price="300">Silver</option>
-          <option data-price="600">Gold</option>
-          <option data-price="1700">Platinum</option>
-        </select>
-        <br>
-        <label>Size: </label>
-        <input type="radio" name="size" value="38mm" checked> 38mm</input>
-        <input type="radio" name="size" value="42mm"> 42mm</input>
-        <br>
-        <div class="more-info spacer-40">
-          <br>
-          <input type="submit"></input>
-        </div>
-      </form>
+    <div class="price-display spacer-20">Starting from: &nbsp;
+      <text class="dollar-sign">$<span id="item-price">349</span></p>
+    </div>
+    <form id="material" class="spacer-20">
+      <label>Material:</label>
+      <select class="pricing">
+        <option data-price="0">Aluminum</option>
+        <option data-price="100">Stainless steel</option>
+        <option data-price="300">Silver</option>
+        <option data-price="600">Gold</option>
+        <option data-price="1700">Platinum</option>
+      </select>
+      <br>
+      <label>Size: </label>
+      <input type="radio" name="size" id="38mm"> 38mm</input>
+      <input type="radio" name="size" id="42mm"> 42mm</input>
+      <br>
+      <div class="more-info spacer-above-60">
+    </form>
+    <form id="email-address">
+      <p class="more-info-display spacer-10">Enter your email address for further reservation instructions:</p>
+      <label for="email-address">Email address: </label>
+      <input type="text" id="email-address-field"></input>
+      <br>
+      <input type="submit" value="Reserve in store" />
+      </div>
+    </form>
+
   </section>
   <footer class="fancy-gray-border-top">
     <div class="footer-copy spacer-left">

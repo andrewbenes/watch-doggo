@@ -14,10 +14,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-2x1 {
@@ -25,24 +25,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 719px) {
   .flex-2x1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .flex-flip {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -52,6 +52,10 @@ body {
 
 .spacer-above-40 {
   margin-top: 40px;
+}
+
+.spacer-above-60 {
+  margin-top: 60px;
 }
 
 .spacer-above-80 {
@@ -186,10 +190,10 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav i {
@@ -204,8 +208,8 @@ nav i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .below-nav-cta h1 {
@@ -218,7 +222,8 @@ nav i {
   font-size: 0.75em;
 }
 
-button {
+button,
+input[type=submit] {
   height: 20px;
   margin: 10px;
   background: -webkit-linear-gradient(#42a1ec, #0070c9);
@@ -229,11 +234,17 @@ button {
   transition: all 0.5s ease;
 }
 
-button:hover {
+button:hover,
+input[type=submit]:hover {
   opacity: 0.67;
 }
 
-button a {
+button a,
+input[type=submit] a {
+  color: #fff;
+}
+
+input[type=submit] {
   color: #fff;
 }
 
@@ -284,10 +295,10 @@ header h2 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .scroll-arrow a {
@@ -305,24 +316,33 @@ section img {
 
 /*Form styles*/
 
-.more-info {
+#email-address {
   display: none;
+}
+
+.more-info-display {
+  font-size: 13px;
+  color: #666;
 }
 
 .reserve {
   text-align: center;
-  height: 350px;
+  height: 345px;
 }
 
 .reserve input {
   margin: 10px;
 }
 
-.price {
+.price-display {
   font-size: 13px;
 }
 
-.price span {
+.price-display span {
+  font-size: 18px;
+}
+
+.dollar-sign {
   font-size: 18px;
 }
 
@@ -364,11 +384,11 @@ footer a span:hover,
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .footer-buttons {
     display: none;
@@ -379,16 +399,16 @@ footer a span:hover,
   footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .footer-copy {
     -webkit-box-flex: 4;
-        -ms-flex: 4 0 0px;
-            flex: 4 0 0;
+    -ms-flex: 4 0 0px;
+    flex: 4 0 0;
     text-align: left;
   }
   .spacer-left {
@@ -396,12 +416,12 @@ footer a span:hover,
   }
   .footer-buttons {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: left;
     margin-right: 20px;
   }
