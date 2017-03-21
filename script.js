@@ -18,4 +18,18 @@ $(document).ready(function () {
       });
     }
   });
+  
+  var basePrice = 349;
+
+$(".vars").change(function() {
+    newPrice = basePrice;
+
+    $('.vars option:selected').each(function() {
+        newPrice += $(this).data('price')
+    });
+    
+    $('#item-price').html(newPrice);
+
 });
+
+  });
