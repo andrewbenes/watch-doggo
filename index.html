@@ -81,27 +81,22 @@
 
   <section id="reserve" class="reserve spacer-above-40 padding-40">
     <h2>Reserve yours today</h2>
-    <div class="price spacer-20">Starting from: <span>&nbsp;$349</span></p>
-      <form class="spacer-40">
+    <div class="spacer-20">Starting from: $<span id="item-price">349</span></p>
+      <form class="spacer-20">
         <label>Material:</label>
-        <select>
-          <option>Aluminum</option>
-          <option>Stainless steel</option>
-          <option>Silver</option>
-          <option>Gold</option>
-          <option>Platinum</option>
+        <select class="vars">
+          <option data-price="0">Aluminum</option>
+          <option data-price="100">Stainless steel</option>
+          <option data-price="300">Silver</option>
+          <option data-price="600">Gold</option>
+          <option data-price="1700">Platinum</option>
         </select>
         <br>
         <label>Size: </label>
-        <input type="radio" name="size" value="38mm"> 38mm</input>
+        <input type="radio" name="size" value="38mm" checked> 38mm</input>
         <input type="radio" name="size" value="42mm"> 42mm</input>
         <br>
         <div class="more-info spacer-40">
-          <p class="reserve-copy spacer-10">
-            Please provide your email address for further reservation instruction:
-          </p>
-          <label>Email address: </label>
-          <input type="text"></input>
           <br>
           <input type="submit"></input>
         </div>
